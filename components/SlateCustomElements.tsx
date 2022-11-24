@@ -1,4 +1,6 @@
-export const CodeElement = (props) => {
+import { RenderElementProps } from "slate-react";
+
+export const CodeElement = (props: RenderElementProps) => {
   return (
     <code style={{ background: "#efefef" }} {...props.attributes}>
       {props.children}
@@ -6,7 +8,7 @@ export const CodeElement = (props) => {
   );
 };
 
-export const QuoteElement = (props) => {
+export const QuoteElement = (props: RenderElementProps) => {
   return (
     <blockquote
       style={{
@@ -22,8 +24,4 @@ export const QuoteElement = (props) => {
       {props.children}
     </blockquote>
   );
-};
-
-export const DefaultElement = (props) => {
-  return <p {...props.attributes}>{props.children}</p>;
 };
