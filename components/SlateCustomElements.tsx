@@ -2,7 +2,7 @@ import { RenderElementProps } from "slate-react";
 
 export const CodeElement = (props: RenderElementProps) => {
   return (
-    <code style={{ background: "#efefef" }} {...props.attributes}>
+    <code style={{ color: "#aaa" }} {...props.attributes}>
       {props.children}
     </code>
   );
